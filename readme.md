@@ -1,3 +1,11 @@
+# Custom xv6 memory allocation
+
+In this project working on the xv6 operating system, I created userspace functions analog to that of malloc() and free() from the C programming language (string.h). 
+
+A full documentation of my approach, reasoning and reflection can be found [here](memory_management_report.pdf), with relevant files being [memory_management.c](./user/memory_management.c) and [memory_management.h](./user/memory_management.h).
+
+# Acknowledgements and xv6
+
 xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
 Version 6 (v6).  xv6 loosely follows the structure and style of v6,
 but is implemented for a modern RISC-V multiprocessor using ANSI C.
