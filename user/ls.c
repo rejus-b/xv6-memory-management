@@ -56,8 +56,11 @@ ls(char *path)
     p = buf+strlen(buf);
     *p++ = '/';
     while(read(fd, &de, sizeof(de)) == sizeof(de)){
+	// Lists every file in the subdirectory
+	// Ignore this section
       if(de.inum == 0)
-        continue;
+	continue;
+
       memmove(p, de.name, DIRSIZ);
       p[DIRSIZ] = 0;
       if(stat(buf, &st) < 0){

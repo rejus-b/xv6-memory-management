@@ -77,6 +77,15 @@ sys_kill(void)
   return kill(pid);
 }
 
+// return the year of which
+// Unix version 6 was released
+
+uint64
+sys_getyear(void)
+{
+  return 1975;
+}
+
 // return how many clock tick interrupts have occurred
 // since start.
 uint64
